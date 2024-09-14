@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Blog</title>
+  
+  <subtitle>ivwan</subtitle>
+  <link href="http://ivwan.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://ivwan.github.io/"/>
+  <updated>2024-09-14T02:50:38.790Z</updated>
+  <id>http://ivwan.github.io/</id>
+  
+  <author>
+    <name>ivwan</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>1</title>
+    <link href="http://ivwan.github.io/2024/09/14/1/"/>
+    <id>http://ivwan.github.io/2024/09/14/1/</id>
+    <published>2024-09-14T02:50:38.000Z</published>
+    <updated>2024-09-14T02:50:38.790Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+</feed>
