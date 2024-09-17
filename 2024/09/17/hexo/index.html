@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="归档: 2024, Blog">
-    <meta name="description" content="Blog">
+    <meta name="keywords" content="Blog">
+    <meta name="description" content="Hexo+Github+Aliyun+NewCDN">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>归档: 2024 | Blog</title>
+    <title>Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -266,262 +266,476 @@
 
 </header>
 
-    <div class="bg-cover pd-header about-cover">
-    <div class="container">
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
     <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                ivwan
-                
-            </div>
-
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="/libs/typed/typed.js"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: [ 
-                            
-                                "从来没有真正的绝境, 只有心灵的迷途",
-                            
-                                "Never really desperate, only the lost of the soul",
-                            
-                        ],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
-</script>
-<script>
-    
-      var bannerUrl = "/medias/featureimages/" + Math.floor(Math.random() * 24) + '.jpg';
-    
-    $('.bg-cover.about-cover').css('background-image', 'url(' + bannerUrl + ')');
-
-</script>
-
-
-    </div>
-</div>
-
-<main class="content">
-
-    
-    <div class="container archive-calendar">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
     <div class="card">
-        <div id="post-calendar" class="card-content"></div>
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2024-09-17
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2024-09-17
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    1.3k
+                </div>
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="部署工具"><a href="#部署工具" class="headerlink" title="部署工具"></a>部署工具</h1><ul>
+<li>mac系统电脑  </li>
+<li>阿里云账号和域名 <a target="_blank" rel="noopener" href="https://www.aliyun.com/">https://www.aliyun.com/</a>  </li>
+<li>Github账号 <a target="_blank" rel="noopener" href="https://github.com/">https://github.com/</a>  </li>
+<li>NewCDN网站 <a target="_blank" rel="noopener" href="https://user.new-cdn.com/">https://user.new-cdn.com/</a></li>
+</ul>
+<h1 id="基本要求"><a href="#基本要求" class="headerlink" title="基本要求"></a>基本要求</h1><ol>
+<li>熟悉基本的命令行操作  </li>
+<li>注册相应账号并购买一个域名（我的几块钱一年）</li>
+</ol>
+<h1 id="基本流程"><a href="#基本流程" class="headerlink" title="基本流程"></a>基本流程</h1><ol>
+<li>搭建hexo博客框架</li>
+<li>推送到github仓库</li>
+<li>配置CDN</li>
+<li>博客的主题配置（自用matery：readme中有详细的配置教程可自行摸索）</li>
+</ol>
+<h1 id="搭建环境"><a href="#搭建环境" class="headerlink" title="搭建环境"></a>搭建环境</h1><ol>
+<li>官网傻瓜式安装Node.js <a target="_blank" rel="noopener" href="http://nodejs.org/">http://nodejs.org/</a></li>
+<li>安装Git <a target="_blank" rel="noopener" href="http://sourceforge.net/projects/git-osx-installer/">http://sourceforge.net/projects/git-osx-installer/</a></li>
+<li>安装cnpm镜像源（比较快）<br><code>npm install -g cnpm --registry=http://registry.npm.taobao.org</code>  </li>
+<li>命令行指令查看版本：检测是否但安装成功<br><code>cnpm -v</code><br><code>node -v</code><br><code>git --version</code></li>
+</ol>
+<h1 id="部署Hexo"><a href="#部署Hexo" class="headerlink" title="部署Hexo"></a>部署Hexo</h1><p><code>cnpm install -g hexo-cli</code>(安装hexo框架)<br><code>hexo -v</code>（查看版本检测是否安装成功）<br><code>mkdir blog</code>（创建新文件夹并命名为blog）<br><code>cd blog</code>（进入blog根目录）<br><code>sudo hexo init</code>（初始化hexo）<br><code>hexo s</code>（在本地生成hexo）<br><a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a>（本地hexo网址）<br><code>hexo n &quot;my first page&quot;</code>（新建一个文章名为my first page）<br><code>hexo cl</code>（清除hexo缓存）<br><code>hexo g</code>（生成hexo博客）<br><code>cnpm install --save hexo-deployer-git</code>（装hexo推送插件)  </p>
+<h1 id="注册github账号建并仓库"><a href="#注册github账号建并仓库" class="headerlink" title="注册github账号建并仓库"></a>注册github账号建并仓库</h1><ol>
+<li>新建一个新的仓库</li>
+<li>仓库名必须为：username.github.io（这里举例为ivwan.github.io方便后续配置对比）</li>
+<li>仓库描述随便填</li>
+<li>仓库状态设为公共public</li>
+<li>创建仓库并保留SSH状态下的网址</li>
+</ol>
+<h1 id="配置GitHub账号信息"><a href="#配置GitHub账号信息" class="headerlink" title="配置GitHub账号信息"></a>配置GitHub账号信息</h1><p><code>git config --global user.name &quot;yourname&quot;</code><br><code>git config --global user.email &quot;youremail&quot;</code></p>
+<h1 id="设置密钥"><a href="#设置密钥" class="headerlink" title="设置密钥"></a>设置密钥</h1><p><code>ssh-keygen -t rsa -C &quot;youremail&quot;</code>(生成密钥&#x2F;一路按回车)<br><code>vim id_rsa.pub</code>(复制公钥到：github头像——setting——SSH and GPG keys——添加SSH公钥)或者<code>cat ～/.ssh/id_rsa.pub</code>（抓取公钥）<br>titile随便起个名，将从id_rsa.pub复制的key粘贴进keys栏并保存<br>配置完成后检测配置是否成功<code>ssh -T git@github.com</code>（返回yes就是链接成功）  </p>
+<h1 id="配置hexo根目录下的-config-yml文件"><a href="#配置hexo根目录下的-config-yml文件" class="headerlink" title="配置hexo根目录下的_config.yml文件"></a>配置hexo根目录下的_config.yml文件</h1><pre><code>deploy:
+type: git
+repo: 将新建仓库后的SSH网址粘贴至此
+branch: master
+</code></pre>
+<p>(找到文件中此处并如上述填写，注意冒号后面有一个空格别丢了)  </p>
+<h1 id="推送hexo到github仓库"><a href="#推送hexo到github仓库" class="headerlink" title="推送hexo到github仓库"></a>推送hexo到github仓库</h1><p><code>hexo cl</code>（清除hexo缓存）<br><code>hexo g</code>（生成静态文章）<br><code>hexo d</code>（推送到github仓库）  </p>
+<h1 id="注册阿里云账号购买一个域名"><a href="#注册阿里云账号购买一个域名" class="headerlink" title="注册阿里云账号购买一个域名"></a>注册阿里云账号购买一个域名</h1><p>假设购买的域名是ivwan.top（举例为了方便理解CDN配置）<br>要进行域名备案（需要较长时间建议提前进行）</p>
+<h1 id="注册获取一个CDN（自用NewCDN免费）与配置CDN"><a href="#注册获取一个CDN（自用NewCDN免费）与配置CDN" class="headerlink" title="注册获取一个CDN（自用NewCDN免费）与配置CDN"></a>注册获取一个CDN（自用NewCDN免费）与配置CDN</h1><ol>
+<li>点击右侧接入域名——添加域名——套餐选默认的——加速域名可以写cdn.ivwan.top（前缀可自行填写，后续和购买域名一致）——取源协议默认HTTP——主源站网址写ivwan.github.io(写网站地址)——确认添加  </li>
+<li>添加完成后获取到一个系统分配的CNAME域名，将其复制并进入到阿里云的域名解析界面,选择已购买的域名选择添加记录——记录类型选择CNAME——主机记录写cdn（即刚才的加速域名前缀）——解析请求来源默认——记录值粘贴CDN分配的域名——TTL为10不变  </li>
+<li>配置完成稍等几分钟等代配置生效，可以点选生效测试按其跳转的网页描述看是否已经成功</li>
+<li>配置完成后再次输入网站ivwan.github.io（输入你的自己的地址）访问发现速度会快很多</li>
+</ol>
+<h1 id="部署过程中遇到的问题"><a href="#部署过程中遇到的问题" class="headerlink" title="部署过程中遇到的问题"></a>部署过程中遇到的问题</h1><ol>
+<li>安装hexo插件很慢注意要用cnpm镜像源安装会很快，不要用npm指令</li>
+<li>各类权限问题解决：Error: EACCES: permission denied   <ul>
+<li><code>sudo su</code>并输入电脑密码进入超级管理员模式再次执行  </li>
+<li><code>sudo chown -R [yourusername] [文件路径]</code> 不行的话将文件路径会退到上一级再试试  </li>
+<li>全局重装npm <code>sudo npm install -g @vue/cli</code>  </li>
+<li>不要频繁启用管理员模式，不熟悉会对文件造成不可逆的损坏</li>
+</ul>
+</li>
+<li>推送代码到仓库时被远端服务器拒绝:<br>个人头像——settings——Code security and analysis——push protection for yourself的状态改为关闭 并且在仓库的settings中的——push protetion也关闭(再此推送即可，推送完即可恢复保护设置)</li>
+<li>检索网站时404 found not file :<br>原因是博客不能一片文章都不留，用<code>hexo n &quot;1.md&quot;</code>指令新建一个文章即可  </li>
+<li>报错[Error: EACCES: permission denied, open ‘&#x2F;Users&#x2F;ivwan&#x2F;blog&#x2F;public&#x2F;sw.js’] {<br>  errno: -13,<br>  code: ‘EACCES’,<br>  syscall: ‘open’,<br>  path: ‘&#x2F;Users&#x2F;ivwan&#x2F;blog&#x2F;public&#x2F;sw.js’<br>}<br>解决:<code>sudo chmod -R 777 /Users/ivwan/blog/public</code>(还是权限问题)  </li>
+<li>报错Error: EACCES: permission denied, unlink ‘&#x2F;Users&#x2F;ivwan&#x2F;blog&#x2F;.deploy_git&#x2F;about&#x2F;index.html’ at async Object.unlink (node:internal&#x2F;fs&#x2F;promises:1059:10)<br>解决:在超级管理员模式下再次操作即可（某文件unlink问题）  </li>
+<li>Port 4000 has been used. Try other port instead.（4000端口已被占用）<ul>
+<li>查询端口使用情况： <code>Lsof -i:4000</code>  </li>
+<li>获取到端口使用信息其中有一个关键词PID  </li>
+<li>杀死进程，释放端口:<code>kill -9 PID号</code><br>8.注意文中用到的ivwan为github的用户名，需要换成自己的用户名进行所有的操作，文中只是示例要注意替换</li>
+</ul>
+</li>
+</ol>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">ivwan</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://ivwan.github.io/2024/09/17/hexo/">http://ivwan.github.io/2024/09/17/hexo/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">ivwan</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2024/09/17/hexo/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Hexo+Github+Aliyun+NewCDN
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-09-17
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            ivwan
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2024/09/17/markdown/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="/medias/featureimages/0.jpg" class="responsive-img" alt="Markdown简要语法">
+                        
+                        <span class="card-title">Markdown简要语法</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            常用Markdown规范
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-09-17
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            ivwan
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE' || selection.getRangeAt(0).commonAncestorContainer.nodeName === 'CODE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: Blog<br />'
+            + '文章作者: ivwan<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
     </div>
 </div>
 
-<script type="text/javascript" src="/libs/echarts/echarts.min.js"></script>
-<script type="text/javascript">
-    let myChart = echarts.init(document.getElementById('post-calendar'));
+<!-- TOC 悬浮按钮. -->
 
-    
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
 
-    let option = {
-        title: {
-            top: 0,
-            text: '文章日历',
-            left: 'center',
-            textStyle: {
-                color: '#3C4858'
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
             }
-        },
-        tooltip: {
-            padding: 10,
-            backgroundColor: '#555',
-            borderColor: '#777',
-            borderWidth: 1,
-            formatter: function (obj) {
-                var value = obj.value;
-                return '<div style="font-size: 14px;">' + value[0] + '：' + value[1] + '</div>';
-            }
-        },
-        visualMap: {
-            show: true,
-            showLabel: true,
-            categories: [0, 1, 2, 3, 4],
-            calculable: true,
-            inRange: {
-                symbol: 'rect',
-                color: ['#ebedf0', '#c6e48b', '#7bc96f', '#239a3b', '#196127']
-            },
-            itemWidth: 12,
-            itemHeight: 12,
-            orient: 'horizontal',
-            left: 'center',
-            bottom: 0
-        },
-        calendar: [{
-            left: 'center',
-            range: ["2023-09-17", "2024-09-17"],
-            cellSize: [13, 13],
-            splitLine: {
-                show: false
-            },
-            itemStyle: {
-                color: '#196127',
-                borderColor: '#fff',
-                borderWidth: 2
-            },
-            yearLabel: {
-                show: false
-            },
-            monthLabel: {
-                nameMap: 'cn',
-                fontSize: 11
-            },
-            dayLabel: {
-                formatter: '{start}  1st',
-                nameMap: 'cn',
-                fontSize: 11
-            }
-        }],
-        series: [{
-            type: 'heatmap',
-            coordinateSystem: 'calendar',
-            calendarIndex: 0,
-            data: [["2023-09-17", 0], ["2023-09-18", 0], ["2023-09-19", 0], ["2023-09-20", 0], ["2023-09-21", 0], ["2023-09-22", 0], ["2023-09-23", 0], ["2023-09-24", 0], ["2023-09-25", 0], ["2023-09-26", 0], ["2023-09-27", 0], ["2023-09-28", 0], ["2023-09-29", 0], ["2023-09-30", 0], ["2023-10-01", 0], ["2023-10-02", 0], ["2023-10-03", 0], ["2023-10-04", 0], ["2023-10-05", 0], ["2023-10-06", 0], ["2023-10-07", 0], ["2023-10-08", 0], ["2023-10-09", 0], ["2023-10-10", 0], ["2023-10-11", 0], ["2023-10-12", 0], ["2023-10-13", 0], ["2023-10-14", 0], ["2023-10-15", 0], ["2023-10-16", 0], ["2023-10-17", 0], ["2023-10-18", 0], ["2023-10-19", 0], ["2023-10-20", 0], ["2023-10-21", 0], ["2023-10-22", 0], ["2023-10-23", 0], ["2023-10-24", 0], ["2023-10-25", 0], ["2023-10-26", 0], ["2023-10-27", 0], ["2023-10-28", 0], ["2023-10-29", 0], ["2023-10-30", 0], ["2023-10-31", 0], ["2023-11-01", 0], ["2023-11-02", 0], ["2023-11-03", 0], ["2023-11-04", 0], ["2023-11-05", 0], ["2023-11-06", 0], ["2023-11-07", 0], ["2023-11-08", 0], ["2023-11-09", 0], ["2023-11-10", 0], ["2023-11-11", 0], ["2023-11-12", 0], ["2023-11-13", 0], ["2023-11-14", 0], ["2023-11-15", 0], ["2023-11-16", 0], ["2023-11-17", 0], ["2023-11-18", 0], ["2023-11-19", 0], ["2023-11-20", 0], ["2023-11-21", 0], ["2023-11-22", 0], ["2023-11-23", 0], ["2023-11-24", 0], ["2023-11-25", 0], ["2023-11-26", 0], ["2023-11-27", 0], ["2023-11-28", 0], ["2023-11-29", 0], ["2023-11-30", 0], ["2023-12-01", 0], ["2023-12-02", 0], ["2023-12-03", 0], ["2023-12-04", 0], ["2023-12-05", 0], ["2023-12-06", 0], ["2023-12-07", 0], ["2023-12-08", 0], ["2023-12-09", 0], ["2023-12-10", 0], ["2023-12-11", 0], ["2023-12-12", 0], ["2023-12-13", 0], ["2023-12-14", 0], ["2023-12-15", 0], ["2023-12-16", 0], ["2023-12-17", 0], ["2023-12-18", 0], ["2023-12-19", 0], ["2023-12-20", 0], ["2023-12-21", 0], ["2023-12-22", 0], ["2023-12-23", 0], ["2023-12-24", 0], ["2023-12-25", 0], ["2023-12-26", 0], ["2023-12-27", 0], ["2023-12-28", 0], ["2023-12-29", 0], ["2023-12-30", 0], ["2023-12-31", 0], ["2024-01-01", 0], ["2024-01-02", 0], ["2024-01-03", 0], ["2024-01-04", 0], ["2024-01-05", 0], ["2024-01-06", 0], ["2024-01-07", 0], ["2024-01-08", 0], ["2024-01-09", 0], ["2024-01-10", 0], ["2024-01-11", 0], ["2024-01-12", 0], ["2024-01-13", 0], ["2024-01-14", 0], ["2024-01-15", 0], ["2024-01-16", 0], ["2024-01-17", 0], ["2024-01-18", 0], ["2024-01-19", 0], ["2024-01-20", 0], ["2024-01-21", 0], ["2024-01-22", 0], ["2024-01-23", 0], ["2024-01-24", 0], ["2024-01-25", 0], ["2024-01-26", 0], ["2024-01-27", 0], ["2024-01-28", 0], ["2024-01-29", 0], ["2024-01-30", 0], ["2024-01-31", 0], ["2024-02-01", 0], ["2024-02-02", 0], ["2024-02-03", 0], ["2024-02-04", 0], ["2024-02-05", 0], ["2024-02-06", 0], ["2024-02-07", 0], ["2024-02-08", 0], ["2024-02-09", 0], ["2024-02-10", 0], ["2024-02-11", 0], ["2024-02-12", 0], ["2024-02-13", 0], ["2024-02-14", 0], ["2024-02-15", 0], ["2024-02-16", 0], ["2024-02-17", 0], ["2024-02-18", 0], ["2024-02-19", 0], ["2024-02-20", 0], ["2024-02-21", 0], ["2024-02-22", 0], ["2024-02-23", 0], ["2024-02-24", 0], ["2024-02-25", 0], ["2024-02-26", 0], ["2024-02-27", 0], ["2024-02-28", 0], ["2024-02-29", 0], ["2024-03-01", 0], ["2024-03-02", 0], ["2024-03-03", 0], ["2024-03-04", 0], ["2024-03-05", 0], ["2024-03-06", 0], ["2024-03-07", 0], ["2024-03-08", 0], ["2024-03-09", 0], ["2024-03-10", 0], ["2024-03-11", 0], ["2024-03-12", 0], ["2024-03-13", 0], ["2024-03-14", 0], ["2024-03-15", 0], ["2024-03-16", 0], ["2024-03-17", 0], ["2024-03-18", 0], ["2024-03-19", 0], ["2024-03-20", 0], ["2024-03-21", 0], ["2024-03-22", 0], ["2024-03-23", 0], ["2024-03-24", 0], ["2024-03-25", 0], ["2024-03-26", 0], ["2024-03-27", 0], ["2024-03-28", 0], ["2024-03-29", 0], ["2024-03-30", 0], ["2024-03-31", 0], ["2024-04-01", 0], ["2024-04-02", 0], ["2024-04-03", 0], ["2024-04-04", 0], ["2024-04-05", 0], ["2024-04-06", 0], ["2024-04-07", 0], ["2024-04-08", 0], ["2024-04-09", 0], ["2024-04-10", 0], ["2024-04-11", 0], ["2024-04-12", 0], ["2024-04-13", 0], ["2024-04-14", 0], ["2024-04-15", 0], ["2024-04-16", 0], ["2024-04-17", 0], ["2024-04-18", 0], ["2024-04-19", 0], ["2024-04-20", 0], ["2024-04-21", 0], ["2024-04-22", 0], ["2024-04-23", 0], ["2024-04-24", 0], ["2024-04-25", 0], ["2024-04-26", 0], ["2024-04-27", 0], ["2024-04-28", 0], ["2024-04-29", 0], ["2024-04-30", 0], ["2024-05-01", 0], ["2024-05-02", 0], ["2024-05-03", 0], ["2024-05-04", 0], ["2024-05-05", 0], ["2024-05-06", 0], ["2024-05-07", 0], ["2024-05-08", 0], ["2024-05-09", 0], ["2024-05-10", 0], ["2024-05-11", 0], ["2024-05-12", 0], ["2024-05-13", 0], ["2024-05-14", 0], ["2024-05-15", 0], ["2024-05-16", 0], ["2024-05-17", 0], ["2024-05-18", 0], ["2024-05-19", 0], ["2024-05-20", 0], ["2024-05-21", 0], ["2024-05-22", 0], ["2024-05-23", 0], ["2024-05-24", 0], ["2024-05-25", 0], ["2024-05-26", 0], ["2024-05-27", 0], ["2024-05-28", 0], ["2024-05-29", 0], ["2024-05-30", 0], ["2024-05-31", 0], ["2024-06-01", 0], ["2024-06-02", 0], ["2024-06-03", 0], ["2024-06-04", 0], ["2024-06-05", 0], ["2024-06-06", 0], ["2024-06-07", 0], ["2024-06-08", 0], ["2024-06-09", 0], ["2024-06-10", 0], ["2024-06-11", 0], ["2024-06-12", 0], ["2024-06-13", 0], ["2024-06-14", 0], ["2024-06-15", 0], ["2024-06-16", 0], ["2024-06-17", 0], ["2024-06-18", 0], ["2024-06-19", 0], ["2024-06-20", 0], ["2024-06-21", 0], ["2024-06-22", 0], ["2024-06-23", 0], ["2024-06-24", 0], ["2024-06-25", 0], ["2024-06-26", 0], ["2024-06-27", 0], ["2024-06-28", 0], ["2024-06-29", 0], ["2024-06-30", 0], ["2024-07-01", 0], ["2024-07-02", 0], ["2024-07-03", 0], ["2024-07-04", 0], ["2024-07-05", 0], ["2024-07-06", 0], ["2024-07-07", 0], ["2024-07-08", 0], ["2024-07-09", 0], ["2024-07-10", 0], ["2024-07-11", 0], ["2024-07-12", 0], ["2024-07-13", 0], ["2024-07-14", 0], ["2024-07-15", 0], ["2024-07-16", 0], ["2024-07-17", 0], ["2024-07-18", 0], ["2024-07-19", 0], ["2024-07-20", 0], ["2024-07-21", 0], ["2024-07-22", 0], ["2024-07-23", 0], ["2024-07-24", 0], ["2024-07-25", 0], ["2024-07-26", 0], ["2024-07-27", 0], ["2024-07-28", 0], ["2024-07-29", 0], ["2024-07-30", 0], ["2024-07-31", 0], ["2024-08-01", 0], ["2024-08-02", 0], ["2024-08-03", 0], ["2024-08-04", 0], ["2024-08-05", 0], ["2024-08-06", 0], ["2024-08-07", 0], ["2024-08-08", 0], ["2024-08-09", 0], ["2024-08-10", 0], ["2024-08-11", 0], ["2024-08-12", 0], ["2024-08-13", 0], ["2024-08-14", 0], ["2024-08-15", 0], ["2024-08-16", 0], ["2024-08-17", 0], ["2024-08-18", 0], ["2024-08-19", 0], ["2024-08-20", 0], ["2024-08-21", 0], ["2024-08-22", 0], ["2024-08-23", 0], ["2024-08-24", 0], ["2024-08-25", 0], ["2024-08-26", 0], ["2024-08-27", 0], ["2024-08-28", 0], ["2024-08-29", 0], ["2024-08-30", 0], ["2024-08-31", 0], ["2024-09-01", 0], ["2024-09-02", 0], ["2024-09-03", 0], ["2024-09-04", 0], ["2024-09-05", 0], ["2024-09-06", 0], ["2024-09-07", 0], ["2024-09-08", 0], ["2024-09-09", 0], ["2024-09-10", 0], ["2024-09-11", 0], ["2024-09-12", 0], ["2024-09-13", 0], ["2024-09-14", 0], ["2024-09-15", 0], ["2024-09-16", 0], ["2024-09-17", 2]]
-        }]
+        });
 
-    };
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
 
-    myChart.setOption(option);
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
 </script>
 
     
-
-    
-
-    <div id="cd-timeline" class="container">
-        
-        <div class="cd-timeline-block">
-
-            
-            
-            
-            <div class="cd-timeline-img year" data-aos="zoom-in-up">
-                <a href="/archives/2024">2024</a>
-            </div>
-            
-
-            
-            
-            
-            <div class="cd-timeline-img month" data-aos="zoom-in-up">
-                <a href="/archives/2024/09">09</a>
-            </div>
-            
-
-            
-            <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>17</span>
-            </div>
-            <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/2024/09/17/hexo/">
-                            <div class="card-image">
-                                
-                                
-                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                                
-                                <span class="card-title"></span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                    Hexo+Github+Aliyun+NewCDN
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2024-09-17
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fas fa-user fa-fw"></i>
-                                    ivwan
-                                    
-                                </span>
-                            </div>
-                        </div>
-
-                        
-                    </div>
-                </div>
-            </article>
-        </div>
-        
-        <div class="cd-timeline-block">
-
-            
-            
-
-            
-            
-
-            
-            <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>17</span>
-            </div>
-            <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/2024/09/17/markdown/">
-                            <div class="card-image">
-                                
-                                
-                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48Y2lyY2xlIGN4PSI0IiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgaWQ9InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAiIGF0dHJpYnV0ZU5hbWU9InIiIGJlZ2luPSIwO3N2Z1NwaW5uZXJzM0RvdHNTY2FsZTEuZW5kLTAuMjVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjMiIGZpbGw9ImN1cnJlbnRDb2xvciI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNnMiIGR1cj0iMC43NXMiIHZhbHVlcz0iMzsuMjszIi8+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjAiIGN5PSIxMiIgcj0iMyIgZmlsbD0iY3VycmVudENvbG9yIj48YW5pbWF0ZSBpZD0ic3ZnU3Bpbm5lcnMzRG90c1NjYWxlMSIgYXR0cmlidXRlTmFtZT0iciIgYmVnaW49InN2Z1NwaW5uZXJzM0RvdHNTY2FsZTAuZW5kLTAuNDVzIiBkdXI9IjAuNzVzIiB2YWx1ZXM9IjM7LjI7MyIvPjwvY2lyY2xlPjwvc3ZnPg==" data-original="/medias/featureimages/0.jpg" class="responsive-img" alt="Markdown简要语法">
-                                
-                                <span class="card-title">Markdown简要语法</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                    常用Markdown规范
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2024-09-17
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fas fa-user fa-fw"></i>
-                                    ivwan
-                                    
-                                </span>
-                            </div>
-                        </div>
-
-                        
-                    </div>
-                </div>
-            </article>
-        </div>
-        
-    </div>
 
 </main>
 
