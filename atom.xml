@@ -6,7 +6,7 @@
   <link href="http://ivwan.github.io/atom.xml" rel="self"/>
   
   <link href="http://ivwan.github.io/"/>
-  <updated>2024-09-14T07:07:21.481Z</updated>
+  <updated>2024-09-17T10:42:50.708Z</updated>
   <id>http://ivwan.github.io/</id>
   
   <author>
@@ -17,12 +17,21 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="http://ivwan.github.io/2024/09/14/a/"/>
-    <id>http://ivwan.github.io/2024/09/14/a/</id>
-    <published>2024-09-14T07:07:21.481Z</published>
-    <updated>2024-09-14T07:07:21.481Z</updated>
+    <title>Markdown简要语法</title>
+    <link href="http://ivwan.github.io/2024/09/17/markdown/"/>
+    <id>http://ivwan.github.io/2024/09/17/markdown/</id>
+    <published>2024-09-17T10:42:00.000Z</published>
+    <updated>2024-09-17T10:42:50.708Z</updated>
     
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;标题语法&quot;&gt;&lt;a href=&quot;#标题语法&quot; class=&quot;headerlink&quot; title=&quot;标题语法&quot;&gt;&lt;/a&gt;标题语法&lt;/h1&gt;&lt;p&gt;井号数量代表标题级别，井号与标题间要用一个空格隔开  &lt;/p&gt;
+&lt;h1 id=&quot;段落语法&quot;&gt;&lt;a href=&quot;#段落语法&quot;</summary>
+        
+      
     
     
     
