@@ -6,7 +6,7 @@
   <link href="http://ivwan.github.io/atom.xml" rel="self"/>
   
   <link href="http://ivwan.github.io/"/>
-  <updated>2024-09-17T15:41:38.145Z</updated>
+  <updated>2024-09-19T18:15:37.207Z</updated>
   <id>http://ivwan.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>饥荒云服务器搭建</title>
+    <link href="http://ivwan.github.io/2024/09/20/ji-huang-yun-fu-wu-qi-da-jian-mac-ban/"/>
+    <id>http://ivwan.github.io/2024/09/20/ji-huang-yun-fu-wu-qi-da-jian-mac-ban/</id>
+    <published>2024-09-19T18:22:00.000Z</published>
+    <updated>2024-09-19T18:15:37.207Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前期准备&quot;&gt;&lt;a href=&quot;#前期准备&quot; class=&quot;headerlink&quot; title=&quot;前期准备&quot;&gt;&lt;/a&gt;前期准备&lt;/h1&gt;&lt;p&gt;阿里云账号以及免费的丐版ECS云服务器&lt;br&gt;File</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Hexo部署方案</title>
