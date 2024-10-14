@@ -6,7 +6,7 @@
   <link href="http://ivwan.github.io/atom.xml" rel="self"/>
   
   <link href="http://ivwan.github.io/"/>
-  <updated>2024-10-14T12:26:15.849Z</updated>
+  <updated>2024-09-19T18:15:37.207Z</updated>
   <id>http://ivwan.github.io/</id>
   
   <author>
@@ -15,30 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>游戏分析积累</title>
-    <link href="http://ivwan.github.io/2024/10/14/you-xi-fen-xi-ji-lei/"/>
-    <id>http://ivwan.github.io/2024/10/14/you-xi-fen-xi-ji-lei/</id>
-    <published>2024-10-14T12:12:54.000Z</published>
-    <updated>2024-10-14T12:26:15.849Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;[明日方舟拆解案]（file&amp;#x2F;1.docx）&lt;br&gt;[游戏分析：有关Rogue玩法在二游频出不穷的思考]（file&amp;#x2F;2.docx）&lt;br&gt;[饥荒农业系统规则拆解和简单迁移的思考]（file&amp;#x2F;3.dcox）&lt;/p&gt;
-</summary>
-        
-      
-    
-    
-    
-    
-    <category term="游戏行业" scheme="http://ivwan.github.io/tags/%E6%B8%B8%E6%88%8F%E8%A1%8C%E4%B8%9A/"/>
-    
-  </entry>
   
   <entry>
     <title>饥荒云服务器搭建</title>
